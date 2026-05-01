@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Object Keys</title>
+</head>
+<body>
+
+<p id="keys"></p>
+
+<script>
+    // Create an object
+    let obj = {
+        a: 1,
+        b: 2,
+        c: 3
+    };
+
+    let text = "";
+
+    // Loop through object keys
+    for (let key in obj) {
+        text = text + key + "<br>";
+    }
+
+    // Show result on the page
+    document.getElementById("keys").innerHTML = text;
+</script>
+
+</body>
+</html>
