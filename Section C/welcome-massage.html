@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-center mt-10">
+
+<input id="name">
+<button onclick="show()">Submit</button>
+<p id="out"></p>
+
+<script>
+function show(){
+ let n=document.getElementById("name").value;
+ document.getElementById("out").innerText="Welcome,Zabed"+n;
+}
+</script>
+
+</body>
+</html>

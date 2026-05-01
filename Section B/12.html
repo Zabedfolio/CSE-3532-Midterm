@@ -6,13 +6,21 @@
 </head>
 <body>
 
-<p id="avg"></p>
+<input type="number" id="n1" placeholder="Number 1">
+<input type="number" id="n2" placeholder="Number 2">
+<input type="number" id="n3" placeholder="Number 3">
+<button onclick="calculate()">Calculate</button>
 
 <script>
-let a=10,b=20,c=30;
-let avg=(a+b+c)/3;
+function calculate() {
+    let n1 = Number(document.getElementById("n1").value);
+    let n2 = Number(document.getElementById("n2").value);
+    let n3 = Number(document.getElementById("n3").value);
 
-document.getElementById("avg").innerText=avg;
+    let avg = (n1 + n2 + n3) / 3;
+
+    alert("Average is: " + avg);
+}
 </script>
 
 </body>
